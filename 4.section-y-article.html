@@ -9,8 +9,7 @@
         article = representa contenido independiente de otro
         r = https://developer.mozilla.org/es/docs/Web/HTML/Element/article 
         
-        aside = representar contenido relacionado pero que no forma parte del contenido principal 
-        r = https://developer.mozilla.org/es/docs/Web/HTML/Element/aside 
+        A continucacion un ejemplo de como usar los sections y ademas junto con los articles los header y footer dentro de los articles son opcionales
     -->
 </head>
 <body>
@@ -21,14 +20,52 @@
     <main>
         <section>
             <h2>Noticias del Inem</h2>
-            <article>Evento Contra la Vilencia</article>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit officiis tenetur impedit libero? Sunt quaerat minus est, officia quibusdam ducimus molestiae deserunt, tenetur rerum id sed odit dignissimos saepe nesciunt!</p>
-            <article>Obligatoriedad de los Uniformes</article>
+            <article>
+                <header>
+                    <h3>Regreso A clases despues de Semana Santa</h3>
+                </header>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit officiis tenetur impedit libero? Sunt quaerat minus est, officia quibusdam ducimus molestiae deserunt, tenetur rerum id sed odit dignissimos saepe nesciunt!</p>
+                <footer>
+                    20/01/2018 Ciudad de Bucaramanga
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <h3>Obligatoriedad de los Uniformes</h3>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magnam laboriosam corrupti excepturi! Magni aperiam neque nisi eaque nam amet, sed obcaecati voluptate tempora enim necessitatibus deserunt ipsum eligendi! Culpa.</p>
+                <footer>
+                    20/03/2018 Ciudad de Bucaramanga
+                </footer>
+            </article>
+        </section>
+        <section>
+             <h2>Noticias del (Colegio) Normal</h2>
+            <article>
+                <header>
+                    <h3>El niño mas inteligente</h3>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae officiis nisi provident quibusdam obcaecati illo minima reprehenderit quaerat officia sed consequatur quos veniam nostrum nam non libero dolores, autem maiores?</p>
+                <footer>
+                    Publicado el : 20/04/2022
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <h3>Empiezan a dar almuerzos</h3>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus distinctio inventore nulla odio ad ipsam officiis, eaque rerum possimus a nihil eligendi magni voluptatum assumenda. Illo quasi corporis impedit vel?</p>
+                <footer>
+                    Info extraida dircetamente del colegio normal
+                </footer>
+            </article>
         </section>
     </main>
 
     <footer>
-
+        Publicado el 20/04/2022 
+        Por : Aarón Bravo
+        Ubicacion : Colombia Bucaramanga
     </footer>
 </body>
 </html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tablas</title>
+    <style>
+        /* td{
+            background-color: chartreuse;
+        } */
+        /* col{
+            background-color: aqua;
+        } */
+
+        col:nth-child(1){
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <!-- las tablas en html sirven para mostran con tenido tabulado .
+    
+    La estrutura de una tabla se compone de : 
+    table -> etiqueta que enciarra una tabla
+    tr -> etiqueta que costruye una fila
+    td -> etiqueta que costruye una celda
+
+    nota : el numero de celdas dentro de un tr establecera el numero de columnas de la tabla-->
+
+   <table>
+       <!-- La etiqueta caption sirve para ponerle un titulo a la tabla es de manera opcional -->
+       <caption>Horario De Clases</caption>
+   
+       <!-- colgroup = sirve para seleccionar las columnas de la tabla
+        cada etiqueta col hace referencia a cada columna. Es decir por cada columna una etiqueta col -->
+    <colgroup>
+        <!-- span = es un atributo para afirmar que una etiqueta col ocupe mas de una columna -->
+        <col span="5">
+        <col>
+    </colgroup>
+
+       <!-- thead = sirve para ponerle cabeceras a las filas de nuestra tablas el tr la filas y el th las celdas -->
+       <thead>
+           <tr>
+               <th></th>
+               <th>L</th>
+               <th>M</th>
+               <th>X</th>
+               <th>J</th>
+               <th>V</th>
+           </tr>
+       </thead>
+       <tbody>
+           <!-- tbody = es para agrupar contenido es opcional siempre y cuando no estemos utilizando un thead -->
+       <tr>
+           <td>8:30</td>
+           <td>Matematicas</td>
+           <td>Matematicas</td>
+           <td>Sociales</td>
+           <td>Matematicas</td>
+           <td>Matematicas</td>
+       </tr>
+       <tr>
+           <td>9:30 - 10:25</td>
+           <td>Lengua</td>
+           <td>Lengua</td>
+           <td>Matematicas</td>
+           <td>Ciencias</td>
+           <td>Lengua</td>
+        </tr>
+        <tr>
+            <td>10:25 - 11:20 </td>
+            <td>Educacion Fisica</td>
+            <td>Ciencias</td>
+            <td>Lengua</td>
+            <td>Lengua</td>
+            <td>Educacion Fisica</td>
+        </tr>
+        <tr>
+            <td>11:20 - 11:45</td>
+            <!-- colspan = es un atributo que sirve para que una celda ocupe mas de una columnas  -->
+            <td colspan="5">Recreo</td>
+        </tr>
+        <tr>
+            <td>11:45 - 12:40</td>
+            <td>Ingles</td>
+            <td>Sociales</td>
+            <td>Ingles</td>
+            <td>Tutoria</td>
+            <td>Ingles</td>
+        </tr>
+        <tr>
+            <td>12:40 - 13:35</td>
+            <!-- rowspan = es un atributo que sirve para que una celda ocupe mas de una columna. Hay que tener cuidado ya que cuando se utiliza se puede romper o dayar la tabla. Hay que organizar bien el contenido -->
+            <td rowspan="2">Tecnologia</td>
+            <td>Educacion Fisica</td>
+            <td>Plasticas</td>
+            <td>Religion</td>
+            <td rowspan="2">Tecnologia</td>
+        </tr>
+        <tr>
+            <td>13:35 - 14:30</td>
+            <td>Frances</td>
+            <td>Tecnologia</td>
+            <td>Frances</td>
+        </tr>
+    </tbody>
+    <!-- tfoot = sirve para poner un pie de pagina. Es totalmente opcional -->
+    <tfoot>
+        <tr>
+            <td colspan="5">Total de asinaturas</td>
+            <td>12</td>
+        </tr>
+    </tfoot>
+   </table>
+</body>
+</html>

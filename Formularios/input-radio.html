@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inputs radio</title>
+</head>
+<body>
+    
+    <!-- input type radio = sirve para seleccionar una opcion -->
+    <!-- <input type="radio"> -->
+
+    <!-- Ejemplo de input type radio  -->
+    <!-- Atributos:
+    name = sirve para espisificar que los tres inputs pertenecen a la misma categoria y que por lo tanto nada mas se puede elegir uno
+
+    checked = sirve para elegir un valor por defceto en el formulario
+
+    value = en este caso e value es obligatorio y sirve para espesificar al servidor el valor que eligio el usuario 
+
+-->
+<div>
+    <label>Masculino
+        <input type="radio" name="genero" value="masculinio">
+    </label>
+</div>
+<div>
+    <label>Femenino
+        <input type="radio"  name="genero" value="Femenino">
+    </label>
+</div>
+<div>
+    <label>Prefiero no decir
+        <input type="radio" name="genero" value="Desconocido" checked>
+    </label>
+</div>
+
+</body>
+</html>

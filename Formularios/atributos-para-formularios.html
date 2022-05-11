@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Atributos para formularios</title>
+</head>
+<body>
+    <form>
+        <!-- placeholder = permite darle una pista al usuario de lo que tiene que introducir -->
+        <input type="text" placeholder="Introduce tu nombre">
+        <!-- required = le dice al navegador y al usuario que ese campo a llenar es obligatorio -->
+        <input type="text" required>
+        <!-- readonly = campo de solo lectura-->
+        <input type="text" readonly>
+        <!-- disable =  inabilita un campo de tal manera que no se envie-->
+        <input type="text" disabled>
+        <!-- min - max = establece un minimo y un maximo de un campo numerico -->
+        <input type="number" min="5" max="20">
+        <!-- minlenght - maxlenght = establece el minimo y maximo de un campo de carateres -->
+        <input type="text" minlength="5" maxlength="100">
+        <!-- autofocus = para ponerl el foco por defecto al cargar el formulario -->
+        <input type="text" autofocus>
+        <button>Enviar</button>
+    </form>
+</body>
+</html>

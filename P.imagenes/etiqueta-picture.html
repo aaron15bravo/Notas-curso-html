@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Etiqueta Picture</title>
+</head>
+<body>
+    <!-- picture es otra etiqueta para poner imagenes pero que nos ofrece mas opciones
+    source = es la etiqueta donde colocamos los atributos a utilizar 
+    media = con este atributo le decimos al navegador que muestre la imagen de srcset si mide x cantidad de px la  -->
+    <picture>
+        <source srcset="pexels-todd-trapani-1535162.jpg, 1651300111pro (1).svg" media="(max-width:1500px), (max-width:1000px)">
+        <img src="whatsapp.png" alt="whatsapp">
+    </picture>
+</body>
+</html>
